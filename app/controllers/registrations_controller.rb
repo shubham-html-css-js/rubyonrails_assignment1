@@ -1,5 +1,6 @@
 class RegistrationsController < ApplicationController
     def new
+        @employee=Employee.new
     end
     def create
         @employee=Employee.new(employee_params)
